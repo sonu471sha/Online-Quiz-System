@@ -1,0 +1,190 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Website.Master.cs" Inherits="Quiz.Result" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="fontawesome-free-6.3.0-web/css/all.css" rel="stylesheet" />
+    <script src="jQuery/jquery.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        body {
+            background-color: whitesmoke;
+        }
+
+
+        table, th, td {
+            border: 2px solid;
+            text-align: left;
+            /*margin: 50px 50px 50px 50px;*/
+        }
+
+        
+
+        main {
+            position: absolute;
+            top: 108px;
+            bottom: 54px;
+            left: 0px;
+            right: 0px;
+            overflow: auto;
+        }
+    </style>
+    <%--    <script>
+        $("#btn_register").parent().appendTo($("form:first"));
+        return false;
+}
+    </script>--%>
+</head>
+<body>
+
+    <div>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Exam Portal</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <div class="inproces">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="Home.aspx">Home</a>
+                            </li>
+                        </div>
+
+                        <div class="dethid">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="Signup.aspx" href="Signup.aspx"><b>Register</b></a>
+                            </li>
+                        </div>
+                        <div class="dethid">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="Signup.aspx" href="Login.aspx">Student Login</a>
+                            </li>
+                        </div>
+                        <div class="dethid">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="Signup.aspx" href="Admin_login.aspx">Admin Login</a>
+                            </li>
+                        </div>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+
+    </div>
+
+
+
+    <div class="navhid">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark ">
+            <!-- Container wrapper -->
+            <div class="container-fluid">
+
+                <!-- Navbar brand -->
+
+
+                <!-- Collapsible wrapper -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Release_system.aspx">Release System</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./chk_add_ques.aspx">Update Test</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./examdetails.aspx">Current Test</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Results.aspx">Result List</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./TestGivenData.aspx">Student Result</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./TestBckup_Folder.aspx">Student Answersheet</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Result_Delete.aspx">Result Record</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Students.aspx">Student Record</a>
+                        </li>
+
+
+
+
+                        <li class="nav-item">
+                            <b><a class="nav-link" style="background-color:red; color:white;" href="./logout.aspx">Logout</a></b>
+                        </li>
+
+                    </ul>
+
+                    <!-- Icons -->
+
+
+                    <!-- Search -->
+
+
+                </div>
+            </div>
+            <!-- Container wrapper -->
+        </nav>
+        <!-- Navbar -->
+
+    </div>
+
+    <%--    <div id="header" style="position:absolute; top:0px; left:0px; height:200px; right:0px;overflow:hidden;"> 
+    </div> 
+    <div id="content" > 
+    </div> 
+    <div id="footer" style="position:absolute; bottom:0px; height:200px; left:0px; right:0px; overflow:hidden;"> 
+    </div>--%>
+
+
+    <main>
+        <div class="container">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </main>
+
+    <footer>
+
+        <%--<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-bottom">
+                <div class="container-fluid">
+                    <div class="col-12">
+                        <div class="text-center p-0 text-primary">
+                            © 2023 Copyright:
+                        </div>
+                        <div class="text-center p-0 text-danger">
+                            <a class="text-danger" href="https://college_or_university_website/">college_or_university_website</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>--%>
+
+        <div class="text-center p-3 fixed-bottom" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2023 Copyright:
+              <a class="text-dark" href="https://college_or_university_website/">college_or_university_website</a>
+        </div>
+    </footer>
+
+
+
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
