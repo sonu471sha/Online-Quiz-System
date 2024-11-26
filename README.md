@@ -2,4 +2,4 @@
 
 Admin can update the system with mcqs.
 
-Student can give the test.
+Students can give the test.
